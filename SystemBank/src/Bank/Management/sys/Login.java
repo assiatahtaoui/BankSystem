@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Login extends JFrame {
+    JLabel lable1, label2, label3;
+    JTextField textField2;
+    JPasswordField passwordField2;
+    JButton button1, button2, button3;
     Login(){
         super();
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icon/bank.png"));
@@ -24,7 +28,55 @@ public class Login extends JFrame {
         JLabel iiimage=new JLabel(iii3);
         iiimage.setBounds(0,0,850,480);
         add(iiimage);
+        
+        lable1=new JLabel("Welcome To ATM");
+        lable1.setForeground(Color.white);
+        lable1.setFont(new Font("AvantGarde", Font.BOLD,38));
+        lable1.setBounds(230,125,450,40);
+        add(lable1);
 
+        label2=new JLabel("Card No:");
+        label2.setFont(new Font("Ralway",Font.BOLD, 28));
+        label2.setForeground(Color.white);
+        label2.setBounds(150,190,375,30);
+        add(label2);
+
+        textField2=new JTextField(15);
+        textField2.setBounds(325,190,230,30);
+        textField2.setFont(new Font("Arial", Font.BOLD, 14));
+        add(textField2);
+
+        label3=new JLabel("PIN :");
+        label3.setFont(new Font("Ralway",Font.BOLD, 28));
+        label3.setForeground(Color.white);
+        label3.setBounds(150,250,375,30);
+        add(label3);
+
+        passwordField2=new JPasswordField(15);
+        passwordField2.setBounds(325,250,230,30);
+        passwordField2.setFont(new Font("Arial", Font.BOLD, 14));
+        add(passwordField2);
+
+        button1=new JButton("SIGN IN");
+        button1.setFont(new Font("Arial", Font.BOLD, 14));
+        button1.setForeground(Color.white);
+        button1.setBackground(Color.black);
+        button1.setBounds(330,300,100,30);
+        add(button1);
+
+        button2=new JButton("CLEAR");
+        button2.setFont(new Font("Arial", Font.BOLD, 14));
+        button2.setForeground(Color.white);
+        button2.setBackground(Color.black);
+        button2.setBounds(450,300,100,30);
+        add(button2);
+
+        button3=new JButton("SIGN UP");
+        button3.setFont(new Font("Arial", Font.BOLD, 14));
+        button3.setForeground(Color.white);
+        button3.setBackground(Color.black);
+        button3.setBounds(330,350,230,30);
+        add(button3);
 
 
         setLayout(null);
